@@ -6,7 +6,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/pwngrid -log /var/log/pwngrid.log -peers /root/peers -address 127.0.0.1:8666
+ExecStart=/usr/local/bin/pwngrid -keys /etc/pwngrid -log /etc/pwnagotchi/log/pwngrid.log -peers /root/peers -address 127.0.0.1:8666
 Restart=always
 RestartSec=30
 
